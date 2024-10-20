@@ -18,7 +18,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" className=" h-9 object-contain mx-3"/>
           <p className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-white text-[18px] font-bold cursor-pointer flex">
             Ahmed &nbsp;
-          <span className="sm:block hidden">
+          <span >
             elbrolosy</span></p>
           </div>
         </Link>
