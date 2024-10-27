@@ -9,8 +9,9 @@ const Stars = React.memo(({isMobile, ...props}) => {
   const sphere = useMemo(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }), []);
 
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 10;
-    ref.current.rotation.y -= delta / 15;
+    const speedFactor = isMobile ? 0.6 : 1;
+    ref.current.rotation.x -= (delta/10) * speedFactor;
+    ref.current.rotation.y -= (delta/15) * speedFactor;
   });
   const starSize = isMobile ? 0.0004 : 0.0012;
   return (

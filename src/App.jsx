@@ -43,7 +43,11 @@ const App = () => {
               <About />
               {!isMobile && <Tech />}
               <Works />
+              <div className="relative z-0">
               <Contact isMobile={isMobile} />
+              <StarsCanvas isMobile={isMobile} />
+
+              </div>
             </>
           )}
         </div>
