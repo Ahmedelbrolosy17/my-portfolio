@@ -29,7 +29,7 @@ const App = () => {
                 <Hero isMobile={isMobile} />
               </div>
               <About />
-              <Tech />
+              {!isMobile && (<Tech />)}
               <Works />
               <div className="relative z-0">
                 <Contact isMobile={isMobile} />
